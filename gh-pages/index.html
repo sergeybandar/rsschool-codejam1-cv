@@ -1,0 +1,233 @@
+<!doctype html>
+<html width="1024">
+
+<head>
+  <style>
+  body{
+    position: absolute;
+
+    width: 1024px;
+  left: 50%;
+transform: translate(-50%,0%);
+border: 2px solid #000;
+background-image: url(2.jpg);background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;color:#fff;position: relative;}
+
+  </style>
+
+<meta charset="utf-8">
+
+<title>Резюме</title>
+
+<link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+
+  <div  id="a">
+  <table width="1024"  align="center" cellspacing="20">
+    <tr>
+<td width="355"  >
+  <img src="1.jpg" alt="Альтернативный текст" height="461" width="353">
+
+</td>
+
+<td>
+  <h2 align="center"> Бандарик Сергей</h2>
+  <hr/>
+  <table  width="400" class="tab" cellspacing="15">
+  <tr>
+    <td width="200"><h3>Возраст</h3></td><td><h3>20</h3></td>
+  </tr>
+<tr><td width="200"><h3>Телефон</h3></td><td><h3>+372 29 *** ** **</h3></td></tr>
+<tr><td width="200"><h3>Почта</h3></td><td><h3>sband*****@mail.ru</h3></td></tr>
+<table  cellspacing="20">
+
+<tr><td width="80"><a href="http://vk.com"><img src="9.png" height="55" width="55"></a></td>
+  <td width="80"><a href="http://facebook.com"><img src="7.png" height="60" width="60"></a></td>
+  <td width="80"><a href="http://twitter.com"><img src="8.png" height="75" width="75"></a></td>
+  <td width="80"><a href="http://skype.com"><img src="4.png" height="75" width="75"></a></td>
+  <td width="80"><a href="http://gmail.com"><img src="5.png" height="65" width="65"></a></td>
+  <td width="80"><a href="http://github.com"><img src="6.png" height="85" width="85"></a></td></tr>
+
+</table>
+</table>
+
+</td>
+</tr>
+  </table>
+
+<div id="b">
+<h2>SUMMARY</h2>
+  <p>Здравствуйте. Меня зовут Сергей. Я студет, учусь в БГУИРе по специальности инженер-электроник-программист.
+    Я занимаюсь программированием и 3д моделированием.
+     Недавно я пошел на курсы по JavaScript.</p>
+     <p>Первостепенная задача для меня – это приношение пользы людям вообще
+       и компании, где я работаю, в частности. Сюда же могу отнести карьерный рост.
+        А если говорить о долгосрочных целях, то я бы хотел добиться высоких
+        успеха в карьере и занять одну из руководящих должностей в вашей компании.
+         Работать с вами мне было бы очень интересно.</p>
+     <h2>SCILLS</h2>
+     <p>Имеется опыт работы в различных системах автоматизированного проектирования, в таки как:
+AutoCad, Inventor, SolidWorks, T-ELEX CAD, Altium designer. А так же имеются базовые знания различных языков программирования:
+Java, C#, C/C++, VHDL, JS, SQL а так же есть знания в HTML, CSS и имеется опыт работы с СУБД MYSQL.
+  <h2>Примеры кода</h2>
+  <pre>
+    Код, написанный на языке VHDL, который эмулирует работу антиблокировочной системы автомобиля.
+Основной файл:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+entity first is
+Port ( t1 : in STD_LOGIC_VECTOR (7 downto 0);
+t2 : in STD_LOGIC_VECTOR (7 downto 0);
+t3 : in STD_LOGIC_VECTOR (7 downto 0);
+t4 : in STD_LOGIC_VECTOR (7 downto 0);
+tt : in STD_LOGIC_VECTOR (7 downto 0);
+L4 : IN std_logic_vector(7 downto 0);
+L3 : IN std_logic_vector(7 downto 0);
+L2 : IN std_logic_vector(7 downto 0);
+L1 : IN std_logic_vector(7 downto 0);
+tab1 : in STD_LOGIC;
+tab2 : in STD_LOGIC;
+tab3 : in STD_LOGIC;
+tab4 : in STD_LOGIC;
+u : in STD_LOGIC_VECTOR (0 to 7));
+end first;
+architecture Behavioral of first is
+begin
+end Behavioral;
+
+Поведенческий файл:
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY second IS
+END second;
+ARCHITECTURE behavior OF second IS
+COMPONENT first
+PORT(
+tab1 : in std_logic;
+tab2 : in std_logic;
+tab3 : in std_logic;
+tab4 : in std_logic;
+u : IN std_logic_vector(0 to 7)
+);
+END COMPONENT;
+signal t1: integer := 186;
+signal tab1 : std_logic := '1';
+signal t2: integer := 213;
+signal tab2 : std_logic := '1';
+signal t3: integer := 112;
+signal tab3 : std_logic := '1';
+signal t4: integer := 219;
+signal tab4 : std_logic := '1';
+signal u : std_logic_vector(0 to 7) := (others => '0');
+constant clk_period : time := 5 ms;
+signal l1: integer := 0;
+signal l2: integer := 0;
+signal l3: integer := 0;
+signal l4: integer := 0;
+signal v: integer := 220;
+function log2(x:positive) return natural is
+variable i :natural;
+begin
+i :=0;
+while (2**i < x) and i < 31 loop
+i := i + 1;
+end loop;
+return i;
+end function;
+BEGIN
+uut: first PORT MAP (
+tab1 => tab1,
+tab2 => tab2,
+tab3 => tab3,
+tab4 => tab4,
+u => u
+);
+stim_proc: process
+begin
+L1 <= abs(100 - 100 * t1 / v);
+L2 <= abs(100 - 100 * t2 / v);
+L3 <= abs(100 - 100 * t3 / v);
+L4 <= abs(100 - 100 * t4 / v);
+u <= conv_std_logic_vector((conv_integer(v)), u'length); --100км/ч
+wait for 3 *clk_period;
+while v >= 25 loop
+if (L1 > 70) then
+tab1 <= '0';
+wait for 2 * clk_period;
+v <= v - (log2(v) / 10) ;
+u <= conv_std_logic_vector((conv_integer(v)), u'length);
+t1 <= v;
+tab1 <= '1';
+L1 <= 0;
+wait for 5*clk_period;
+end if;
+if (L2 > 70) then
+tab2 <= '0';
+wait for 2 * clk_period;
+v <= v - (log2(v) / 10) ;
+u <= conv_std_logic_vector((conv_integer(v)), u'length);
+t2 <= v;
+tab2 <= '1';
+L2 <= 0;
+wait for 5*clk_period;
+end if;
+if (L3 > 70) then
+tab3 <= '0';
+wait for 2 * clk_period;
+v <= v - (log2(v) / 10) ;
+u <= conv_std_logic_vector((conv_integer(v)), u'length);
+t3 <= v;
+tab3 <= '1';
+L3 <= 0;
+wait for 5*clk_period;
+end if;
+if (L4 > 70) then
+tab4 <= '0';
+wait for 2 * clk_period;
+v <= v - (log2(v) / 10) ;
+u <= conv_std_logic_vector((conv_integer(v)), u'length);
+t4 <= v;
+tab4 <= '1';
+L4 <= 0;
+wait for 5*clk_period;
+end if;
+wait for (clk_period * 2);
+v <= v - (log2(v) / 2) ;
+u <= conv_std_logic_vector((conv_integer(v)), u'length);
+t1 <= t1 * 80 / 100;
+t2 <= t2 * 80 / 100;
+t3 <= t3 * 80 / 100;
+t4 <= t4 * 80 / 100;
+L1 <= abs(100 - 100 * t1 / v);
+L2 <= abs(100 - 100 * t2 / v);
+L3 <= abs(100 - 100 * t3 / v);
+L4 <= abs(100 - 100 * t4 / v);
+wait for (clk_period * 2);
+end loop;
+while v >= 0 loop
+v <= v * 60 / 100;
+u <= conv_std_logic_vector((conv_integer(v)), u'length);
+t1 <= t1 * 50 / 100;
+t2 <= t2 * 50 / 100;
+t3 <= t3 * 50 / 100;
+t4 <= t4 * 50 / 100;
+wait for (clk_period * 5);
+end loop;
+wait;
+end process;
+END;</pre>
+<p>Кроме того, имеются высокие знания физико-математических дисциплин и базовые знания английского языка.</p>
+<table><tr></tr></table>
+</div>
+</div>
+</body>
+</html>

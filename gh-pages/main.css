@@ -1,0 +1,26 @@
+#a{
+
+background: rgba(255, 255, 255, 0.75);
+}
+#b{
+  color : #C94B19;
+  
+}
+h3{
+  color : #000;
+
+}
+p{text-align: justify;
+color : rgb(0, 0, 0);
+padding : 0px 20px 0px 20px;
+text-indent: 1.5em;
+}
+h2{color : #C94B19;
+  text-align:  center;
+}
+#d{width: 200px;}
+pre{
+  color : #000;
+  font-family: Courier;
+  padding : 0px 20px 0px 20px;
+}
